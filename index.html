@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>test portfolio for intership</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Landing Page HTML Template" name="keywords">
+        <meta content="Landing Page HTML Template" name="description">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,400,600&display=swap" rel="stylesheet">
+
+        <!-- Libraries CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style2.css">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Start -->
+        <div id="nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-light navbar-light">
+                    <a href="index.html" class="navbar-brand">Test portfolio</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#service" class="nav-link">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav End -->
+        
+        <!-- Header Start-->
+        <div class="header" id="header">
+            <div class="container">
+                <h1>Мое тестовое <span>портфолио</span></h1>
+                <p>Собрал несколько наробок на одном лендинге</p>
+                <a class="btn" href="#" onClick="openModal1()" ><i class="fas fa-link"></i>Click and read More</a>
+            </div>
+        </div>
+
+        <!--Modal window start-->
+
+        <div id="myModal1" class="modal" onclick="closeModal1(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <div class="modal-header">
+                    <!--<button class="close-btn" onclick="closeModal1(event)">&times;</button>-->
+                </div>
+                <p>Собрал небольшое количество своих наработок в небольшое, если можно так сказать, портфолио. Это не все проекты которые я делал на досуге. Хотел бы еще добавить небольшой проект на php, но не приложу ума как сделать это грамотно. </p>
+                <br>
+                <p>В отличие от этого портфолио, проекты которые предоставлены я верстал вручную, а не как здесь переделал готовый шаблон под свои нужды. Данным "недоразумением" хочу показать свои навыки, которые могут мне пригодится на стажировке.</p>
+                <br>
+                <p>В дальнейшем хочу изучить больше разлычных технологий и методов чтобы изготавливать реально качественный продук (а не то недорозумение которое я предоставил ниже). А пока что прошу, не судите строго.</p>
+            </div>
+        </div>
+
+        <!--Modal window end-->
+
+
+        <!-- Header End-->
+
+        
+        
+        <!-- About Start
+        <div class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h4>Learn more</h4>
+                    <h2>About Us</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="about-img">
+                            <img src="img/about.jpg" alt="About Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-content">
+                            <h3>Our Story</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum lobortis neque, et pellentesque risus scelerisque porttitor. Pellentesque felis arcu
+                            </p>
+                        </div>
+                        <div class="about-content">
+                            <h3>Our Goal</h3>
+                            <p>
+                                Donec consequat risus a quam bibendum semper. Aliquam dictum, nulla ullamcorper porttitor dignissim, mauris metus dapibus felis, ac cursus est magna at diam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        <!-- Service Start -->
+        <div class="service" id="service">
+            <div class="container">
+                <div class="section-header">
+                    <span class="glyphicon glyphicon-asterisk"></span>
+                    <h4>World class</h4>
+                    <h2>Services</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="service-img">
+                            <img src="img/work-cars.png" alt="Service Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-detail">
+                            <h3><i class="fas fa-laptop"></i>Сайт аренды авто</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Небольшой проект</li>
+                                <li class="list-group-item">HTML/CSS/JS</li>
+                                <li class="list-group-item">Из интересного, реализован рабочий фильтр</li>
+                                <li class="list-group-item">Адаптива нет, в разработке так сказать</li>
+                                <li class="list-group-item"><a href="https://stackblitz.com/edit/stackblitz-starters-8dorzzcc?file=index.html" target="_blank">Посмотреть (stackblitz)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center"> 
+                    <div class="col-md-6 d-md-none d-sm-block">
+                        <!--<div class="service-img">
+                            <img src="img/work-test.png" alt="Service Image">
+                        </div>-->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-detail">
+                            <h3><i class="fas fa-mobile-alt"></i>Лендинг списка товаров</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Это тестовое задание которое мне выдали на hh</li>
+                                <li class="list-group-item">HTML/CSS</li>
+                                <li class="list-group-item">Я его так и не отправил, засомневался</li>
+                                <li class="list-group-item">Имеется кое-какой адаптив, но не на Айфонах, не разобрался с кросс-браузерными стилями</li>
+                                <li class="list-group-item"><a href="https://vladimir859.github.io/test01/" target="_blank">Посмотреть</a> а так же  <a href="https://github.com/Vladimir859/test01" target="_blank">Код на Git</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-sm-none d-md-block">
+                        <div class="service-img">
+                            <img src="img/work-test.png" alt="Service Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="service-img">
+                            <img src="img/work-birtday.png" alt="Service Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-detail">
+                            <h3><i class="fas fa-shield-alt"></i>Мой день рожденья</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Делал смеха ради, т.к. устал от вопросов "а что тебе подарить?"</li>
+                                <li class="list-group-item">HTML/CSS/JS</li>
+                                <li class="list-group-item">Казалось смешным, но сейчас мне стыдно</li>
+                                <li class="list-group-item">За основу был взят шаблон, переделан под себя и добавлено немного JS</li>
+                                <li class="list-group-item"><a href="https://vladimir859.github.io/birthday/" target="_blank">Посмотреть</a> а так же <a href="https://github.com/Vladimir859/birthday" target="_blank">Git</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 d-md-none d-sm-block">
+                        <div class="service-img">
+                            <img src="#" alt="Service Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-detail">
+                            <h3><i class="fas fa-envelope-open-text"></i>Сайт про животных</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Нечего сверхъестественного</li>
+                                <li class="list-group-item">HTML/CSS</li>
+                                <li class="list-group-item">Планирую добавить немного php. Реализовать небольшую Бд к лендингу</li>
+                                <li class="list-group-item">Адаптив отсутствует</li>
+                                <li class="list-group-item"><a href="https://vladimir859.github.io/animals/" target="_blank">Посмотреть</a> а так же <a href="https://github.com/Vladimir859/animals" target="_blank">Git</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-sm-none d-md-block">
+                        <div class="service-img">
+                            <img src="img/work-animals.png" alt="Service Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row footer-top">
+                    <div class="col-md-4">
+                        <h2>Связаться со мной</h2>
+                        <div class="contact-info">
+                            <h4>E-mail:</h4>
+                            <p>nuykinvladimir859@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Соц сети (нет)</h2>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Email (нет)</h2>
+                        <div class="subscribe">
+                            <form>
+                                <input type="email" class="form-control" placeholder="Your email" />
+                                <button class="btn" type="submit">Submit</button>
+                                <label>Don't worry i don't spam</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fas fa-angle-up"></i></a>
+
+        <!-- Libraries JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Main Javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
